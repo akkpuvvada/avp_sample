@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		142355932C94313900F22195 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 142355922C94313900F22195 /* RealityKitContent */; };
 		142355952C94313900F22195 /* avp_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142355942C94313900F22195 /* avp_sampleApp.swift */; };
-		142355972C94313900F22195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142355962C94313900F22195 /* ContentView.swift */; };
-		142355992C94313900F22195 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142355982C94313900F22195 /* ImmersiveView.swift */; };
 		1423559B2C94313B00F22195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1423559A2C94313B00F22195 /* Assets.xcassets */; };
 		1423559E2C94313B00F22195 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1423559D2C94313B00F22195 /* Preview Assets.xcassets */; };
 		142355A92C94313B00F22195 /* avp_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142355A82C94313B00F22195 /* avp_sampleTests.swift */; };
+		1450CD502CC7567D00A5A96D /* Preview+AppStateEnvironbment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450CD4F2CC7566800A5A96D /* Preview+AppStateEnvironbment.swift */; };
+		1450CD522CC756C600A5A96D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1450CD512CC756BD00A5A96D /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +30,18 @@
 		1423558D2C94313900F22195 /* avp_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avp_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142355912C94313900F22195 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		142355942C94313900F22195 /* avp_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avp_sampleApp.swift; sourceTree = "<group>"; };
-		142355962C94313900F22195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		142355982C94313900F22195 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		1423559A2C94313B00F22195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1423559D2C94313B00F22195 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1423559F2C94313B00F22195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142355A42C94313B00F22195 /* avp_sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = avp_sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		142355A82C94313B00F22195 /* avp_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avp_sampleTests.swift; sourceTree = "<group>"; };
+		1450CD4F2CC7566800A5A96D /* Preview+AppStateEnvironbment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+AppStateEnvironbment.swift"; sourceTree = "<group>"; };
+		1450CD512CC756BD00A5A96D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1450CD4B2CC7452800A5A96D /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1423558A2C94313900F22195 /* Frameworks */ = {
@@ -80,9 +84,10 @@
 		1423558F2C94313900F22195 /* avp_sample */ = {
 			isa = PBXGroup;
 			children = (
+				1450CD4E2CC7565F00A5A96D /* Extensions */,
+				1450CD4B2CC7452800A5A96D /* Views */,
 				142355942C94313900F22195 /* avp_sampleApp.swift */,
-				142355962C94313900F22195 /* ContentView.swift */,
-				142355982C94313900F22195 /* ImmersiveView.swift */,
+				1450CD512CC756BD00A5A96D /* AppState.swift */,
 				1423559A2C94313B00F22195 /* Assets.xcassets */,
 				1423559F2C94313B00F22195 /* Info.plist */,
 				1423559C2C94313B00F22195 /* Preview Content */,
@@ -114,6 +119,14 @@
 			path = avp_sampleTests;
 			sourceTree = "<group>";
 		};
+		1450CD4E2CC7565F00A5A96D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1450CD4F2CC7566800A5A96D /* Preview+AppStateEnvironbment.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +141,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1450CD4B2CC7452800A5A96D /* Views */,
 			);
 			name = avp_sample;
 			packageProductDependencies = (
@@ -217,9 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142355972C94313900F22195 /* ContentView.swift in Sources */,
 				142355952C94313900F22195 /* avp_sampleApp.swift in Sources */,
-				142355992C94313900F22195 /* ImmersiveView.swift in Sources */,
+				1450CD522CC756C600A5A96D /* AppState.swift in Sources */,
+				1450CD502CC7567D00A5A96D /* Preview+AppStateEnvironbment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"avp_sample/Preview Content\"";
+				DEVELOPMENT_TEAM = 42JJPKP725;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -394,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"avp_sample/Preview Content\"";
+				DEVELOPMENT_TEAM = 42JJPKP725;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
